@@ -194,7 +194,6 @@ class PlaylistsService {
   }
 
   async verifyPlaylist(id) {
-    console.log(id);
     const query = {
       text: 'SELECT * FROM playlists WHERE id = $1',
       values: [id],
